@@ -1,13 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {}
-    }
-  },
-  css: ['~/assets/global.scss', '~/assets/css/tailwind.css'],
+  css: ['~/assets/global.scss'],
   app: { baseURL: '/' },
   vite: {
     css: {
@@ -17,5 +11,16 @@ export default defineNuxtConfig({
         }
       }
     }
+  },
+  modules: ['@nuxt/ui'],
+  imports: {
+    dirs: [
+      // 扫描顶层目录中模块
+      'composables',
+      // 扫描内嵌一层深度的模块，指定特定文件名和后缀名
+      'composables/*/index.{ts,js,mjs,mts}',
+      // 扫描给定目录中所有模块
+      'composables/**'
+    ]
   }
 })
