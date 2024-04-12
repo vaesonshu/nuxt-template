@@ -1,4 +1,8 @@
 <template>
-  <div class=" text-3xl">首页</div>
-  <NuxtLink to="/detail/1">跳转到博客详情页</NuxtLink>
+  <div class="text-3xl">{{ message }}</div>
+  <NuxtLink to="/detail/1">跳转</NuxtLink>
 </template>
+
+<script setup lang="ts">
+const { message } = await $fetch('/api/hello')
+</script>
