@@ -12,7 +12,7 @@ export default defineNuxtConfig({
       }
     }
   },
-  modules: ['@nuxt/ui'],
+  modules: ['@nuxt/ui', "@nuxtjs/tailwindcss"],
   imports: {
     dirs: [
       // 扫描顶层目录中模块
