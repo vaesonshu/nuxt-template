@@ -1,5 +1,5 @@
 export default defineEventHandler((event) => {
   return {
-    message: 'hello，nuxt3！'
+    message: 'hello，Nuxt3！'
   }
 })

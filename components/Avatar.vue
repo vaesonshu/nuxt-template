@@ -1,6 +1,3 @@
 <template>
-  <img
-    class="w-[50px] border-[1px] border-slate-300 rounded-full inline-block"
-    alt="avatar"
-  />
+  <UAvatar src="https://avatars.githubusercontent.com/u/739984?v=4" alt="Avatar" />
 </template>

@@ -1,5 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  nitro: {
+    preset: 'vercel'
+  },
   devtools: { enabled: true },
   css: ['~/assets/global.scss'],
   app: { baseURL: '/' },
@@ -12,7 +15,7 @@ export default defineNuxtConfig({
       }
     }
   },
-  modules: ['@nuxt/ui', "@nuxtjs/tailwindcss"],
+  modules: ['@nuxt/ui', '@nuxtjs/tailwindcss'],
   imports: {
     dirs: [
       // 扫描顶层目录中模块
