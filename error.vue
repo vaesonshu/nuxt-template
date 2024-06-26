@@ -1,12 +1,3 @@
-<template>
-  <div>
-    <!-- Error Page {{ error }} -->
-    <div>
-      <button @click="goHome">Home</button>
-    </div>
-  </div>
-</template>
-
 <script lang="ts" setup>
 // const props = defineProps({
 //   error: Object
@@ -16,4 +7,16 @@
 //   clearError({ redirect: '/' })
 // }
 </script>
+
+<template>
+  <div>
+    <!-- Error Page {{ error }} -->
+    <div>
+      <button @click="goHome">
+        Home
+      </button>
+    </div>
+  </div>
+</template>
+
 <style scoped></style>

@@ -1,3 +1,5 @@
 <template>
-  <div class="">Detail Page ——{{ $route.params.id }}</div>
+  <div class="">
+    Detail Page ——{{ $route.params.id }}
+  </div>
 </template>

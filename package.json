@@ -1,13 +1,15 @@
 {
   "name": "nuxt-app",
-  "private": true,
   "type": "module",
+  "private": true,
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "@nuxt/ui": "^2.15.2",
@@ -20,6 +22,8 @@
     "node": "20.9.0"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^2.21.1",
+    "eslint": "^8.57.0",
     "sass": "^1.72.0"
   }
 }
