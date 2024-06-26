@@ -10,10 +10,10 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@import "~/assets/_variables.scss";'
-        }
-      }
-    }
+          additionalData: '@import "~/assets/_variables.scss";',
+        },
+      },
+    },
   },
   modules: ['@nuxt/ui', '@nuxtjs/tailwindcss'],
   imports: {
@@ -23,7 +23,7 @@ export default defineNuxtConfig({
       // 扫描内嵌一层深度的模块，指定特定文件名和后缀名
       'composables/*/index.{ts,js,mjs,mts}',
       // 扫描给定目录中所有模块
-      'composables/**'
-    ]
-  }
+      'composables/**',
+    ],
+  },
 })
