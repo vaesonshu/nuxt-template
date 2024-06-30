@@ -4,7 +4,7 @@
   "editor.formatOnSave": false,
   // 启用保存自动fix功能
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   // 静默一些验证规则降低心智负担, 当然还是会被自动fix
   "eslint.rules.customizations": [
