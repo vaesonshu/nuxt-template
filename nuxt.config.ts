@@ -4,17 +4,7 @@ export default defineNuxtConfig({
     // preset: 'vercel'
   },
   devtools: { enabled: true },
-  css: ['~/assets/global.scss'],
   app: { baseURL: '/' },
-  vite: {
-    css: {
-      preprocessorOptions: {
-        scss: {
-          additionalData: '@import "~/assets/_variables.scss";',
-        },
-      },
-    },
-  },
   modules: ['@nuxt/ui', '@nuxtjs/tailwindcss'],
   imports: {
     dirs: [
