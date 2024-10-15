@@ -3,6 +3,16 @@ export default defineNuxtConfig({
   nitro: {
     // preset: 'vercel'
   },
+  css: ['assets/tailwind.css'],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "~/assets/_variables.scss" as *;'
+        }
+      }
+    }
+  },
   devtools: { enabled: true },
   app: { baseURL: '/' },
   modules: [
@@ -17,7 +27,8 @@ export default defineNuxtConfig({
           'storeToRefs'
         ]
       }
-    ]
+    ],
+    '@element-plus/nuxt'
   ],
   imports: {
     dirs: [
@@ -28,5 +39,6 @@ export default defineNuxtConfig({
       // 扫描给定目录中所有模块
       'composables/**'
     ]
-  }
+  },
+  compatibilityDate: '2024-10-15'
 })

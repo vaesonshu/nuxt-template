@@ -13,18 +13,17 @@
   },
   "dependencies": {
     "@nuxt/ui": "^2.15.2",
-    "@pinia/nuxt": "^0.5.1",
     "@prisma/client": "^5.16.1",
-    "nuxt": "^3.11.1",
-    "pinia": "^2.1.7",
+    "nuxt": "^3.13.2",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },
   "volta": {
-    "node": "20.15.0"
+    "node": "20.18.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.21.1",
+    "@element-plus/nuxt": "^1.0.10",
     "@types/node": "^20.14.9",
     "eslint": "^8.57.0",
     "prisma": "^5.16.1",
