@@ -3,9 +3,9 @@
 //   error: Object
 // })
 
-// function goHome() {
-//   clearError({ redirect: '/' })
-// }
+function goHome() {
+  clearError({ redirect: '/' })
+}
 </script>
 
 <template>

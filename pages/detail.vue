@@ -6,7 +6,4 @@
 </template>
 
 <style scoped lang="scss">
-h1 {
-  color: $linkColor;
-}
 </style>
