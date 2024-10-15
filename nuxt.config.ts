@@ -4,15 +4,6 @@ export default defineNuxtConfig({
     // preset: 'vercel'
   },
   css: ['assets/tailwind.css'],
-  vite: {
-    css: {
-      preprocessorOptions: {
-        scss: {
-          additionalData: '@use "~/assets/_variables.scss" as *;'
-        }
-      }
-    }
-  },
   devtools: { enabled: true },
   app: { baseURL: '/' },
   modules: [

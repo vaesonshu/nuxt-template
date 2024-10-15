@@ -13,8 +13,10 @@
   },
   "dependencies": {
     "@nuxt/ui": "^2.15.2",
-    "@prisma/client": "^5.16.1",
+    "@pinia/nuxt": "^0.5.5",
+    "@prisma/client": "^5.21.0",
     "nuxt": "^3.13.2",
+    "pinia": "^2.2.4",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },
@@ -26,7 +28,6 @@
     "@element-plus/nuxt": "^1.0.10",
     "@types/node": "^20.14.9",
     "eslint": "^8.57.0",
-    "prisma": "^5.16.1",
     "sass": "^1.72.0"
   }
 }

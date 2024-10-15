@@ -5,8 +5,7 @@
   </div>
 </template>
 <script setup lang="ts">
-const { message } = await $fetch('/api/hello')
+// const { message } = await $fetch('/api/hello')
 </script>
 
-<style scoped lang="scss">
-</style>
+<style scoped lang="scss"></style>
