@@ -1,7 +1,7 @@
 {
-  // 禁用prettier并用eslint取代
-  "prettier.enable": false,
-  "editor.formatOnSave": false,
+  // 禁用prettier并用eslint取代 需要时设置为 false 然后重启 IDE
+  "prettier.enable": true,
+  "editor.formatOnSave": true,
   // 启用保存自动fix功能
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"

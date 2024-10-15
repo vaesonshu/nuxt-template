@@ -16,7 +16,7 @@ npm run dev
 ## 组件库
 
 - [Nuxt Modules](https://nuxt.com/modules)
-- [Nuxt UI](https://ui.nuxt.com/) 默认
+- [Nuxt UI](https://ui.nuxt.com/) 默认 内置 @nuxtjs/tailwindcss
 
 ## 代码规范
 

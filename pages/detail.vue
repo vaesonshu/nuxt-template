@@ -7,6 +7,6 @@
 
 <style scoped lang="scss">
 h1 {
-  color: $linkColor;
+  color: var(--link-color);
 }
 </style>
