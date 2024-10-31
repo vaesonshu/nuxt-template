@@ -19,8 +19,19 @@ export default defineNuxtConfig({
         ]
       }
     ],
-    '@element-plus/nuxt'
+    '@element-plus/nuxt',
+    '@sidebase/nuxt-auth'
   ],
+  auth: {
+    isEnabled: true,
+    baseURL: process.env.AUTH_ORIGIN,
+    provider: {
+      type: 'authjs',
+      trustHost: false,
+      defaultProvider: 'github',
+      addDefaultCallbackUrl: true
+    }
+  },
   imports: {
     dirs: [
       // 扫描顶层目录中模块
