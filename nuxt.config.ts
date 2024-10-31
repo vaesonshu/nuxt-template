@@ -20,7 +20,8 @@ export default defineNuxtConfig({
       }
     ],
     '@element-plus/nuxt',
-    '@sidebase/nuxt-auth'
+    '@sidebase/nuxt-auth',
+    '@nuxthub/core'
   ],
   auth: {
     isEnabled: true,

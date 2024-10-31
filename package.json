@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@nuxt/ui": "^2.15.2",
+    "@nuxthub/core": "^0.8.4",
     "@pinia/nuxt": "^0.5.5",
     "@prisma/client": "^5.21.0",
     "next-auth": "^4.21.1",
