@@ -20,16 +20,16 @@ export default defineNuxtConfig({
     '@sidebase/nuxt-auth',
     '@nuxthub/core'
   ],
-  auth: {
-    isEnabled: true,
-    baseURL: process.env.AUTH_ORIGIN,
-    provider: {
-      type: 'authjs',
-      trustHost: false,
-      defaultProvider: 'github',
-      addDefaultCallbackUrl: true
-    }
-  },
+  // auth: {
+  //   isEnabled: true,
+  //   baseURL: process.env.AUTH_ORIGIN,
+  //   provider: {
+  //     type: 'authjs',
+  //     trustHost: false,
+  //     defaultProvider: 'github',
+  //     addDefaultCallbackUrl: true
+  //   }
+  // },
   imports: {
     dirs: [
       // 扫描顶层目录中模块

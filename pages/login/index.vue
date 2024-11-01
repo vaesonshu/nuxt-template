@@ -1,9 +1,9 @@
 <script setup lang="ts">
-const { status, data, signOut, signIn } = useAuth()
+// const { status, data, signOut, signIn } = useAuth()
 </script>
 
 <template>
-  <div class="w-full max-w-5xl mx-auto bg-white px-5 py-4 rounded-t shadow-xl">
+  <!-- <div class="w-full max-w-5xl mx-auto bg-white px-5 py-4 rounded-t shadow-xl">
     <div class="flex items-center justify-between">
       <div class="flex items-center space-x-2">
         <img v-if="status === 'authenticated' && data?.user?.image" class="w-12 h-12 rounded-full" :src="data.user.image" alt="User Avatar" />
@@ -18,5 +18,5 @@ const { status, data, signOut, signIn } = useAuth()
         <span>Login</span>
       </button>
     </div>
-  </div>
+  </div> -->
 </template>
