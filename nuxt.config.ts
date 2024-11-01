@@ -2,6 +2,9 @@
 export default defineNuxtConfig({
   css: ['assets/tailwind.css'],
   devtools: { enabled: true },
+  runtimeConfig: {
+    authOrigin: process.env.AUTH_ORIGIN
+  },
   app: { baseURL: '/' },
   modules: [
     '@nuxt/ui',
@@ -20,16 +23,16 @@ export default defineNuxtConfig({
     '@sidebase/nuxt-auth',
     '@nuxthub/core'
   ],
-  // auth: {
-  //   isEnabled: true,
-  //   baseURL: process.env.AUTH_ORIGIN,
-  //   provider: {
-  //     type: 'authjs',
-  //     trustHost: false,
-  //     defaultProvider: 'github',
-  //     addDefaultCallbackUrl: true
-  //   }
-  // },
+  auth: {
+    isEnabled: true,
+    baseURL: process.env.AUTH_ORIGIN,
+    provider: {
+      type: 'authjs',
+      trustHost: false,
+      defaultProvider: 'github',
+      addDefaultCallbackUrl: true
+    }
+  },
   imports: {
     dirs: [
       // 扫描顶层目录中模块
