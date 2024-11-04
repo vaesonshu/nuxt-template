@@ -12,9 +12,7 @@ function goHome() {
   <div>
     <!-- Error Page {{ error }} -->
     <div>
-      <button @click="goHome">
-        Home
-      </button>
+      <button @click="goHome">Home</button>
     </div>
   </div>
 </template>
